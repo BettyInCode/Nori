@@ -7,6 +7,7 @@
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
@@ -164,14 +165,14 @@
                 <div class="timeline-item">
                     <div class="dot"></div>
                     <h3>1985</h3>
-                    <h4>National Recognition</h4>
-                    <p>Awarded the National Excellence in Education award for outstanding academic results.</p>
+                    <h4>County Recognition</h4>
+                    <p>Awarded the County Excellence in Education award for outstanding academic results.</p>
                 </div>
                 <div class="timeline-item">
                     <div class="dot"></div>
                     <h3>2005</h3>
-                    <h4>Global Expansion</h4>
-                    <p>Established international exchange programs with partner schools across Europe and Asia.</p>
+                    <h4>Country Expansion</h4>
+                    <p>Established intercounties exchange programs with partner schools across Kenya.</p>
                 </div>
                 <div class="timeline-item">
                     <div class="dot"></div>
@@ -227,7 +228,7 @@
                     <div class="program-stats">
                         <div><i class="fas fa-user-graduate"></i> 450+ Enrolled</div>
                         <div><i class="fas fa-trophy"></i> 99% Placement</div>
-                        <div><i class="fas fa-clock"></i> 2-Year Program</div>
+                        <div><i class="fas fa-clock"></i> 4-Year Program</div>
                     </div>
                     <a href="#" class="btn btn-outline">Explore Program <i class="fas fa-arrow-right"></i></a>
                 </div>
@@ -237,7 +238,7 @@
                 <div class="program-card">
                     <div class="card-img">
                         <img src="https://images.unsplash.com/photo-1456513080510-7bf3a84b82f8?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Arts">
-                        <span class="badge-duration">2 Years</span>
+                        <span class="badge-duration">4 Years</span>
                     </div>
                     <div class="card-body">
                         <span class="category">ARTS & HUMANITIES</span>
@@ -249,7 +250,7 @@
                 <div class="program-card">
                     <div class="card-img">
                         <img src="https://images.unsplash.com/photo-1571260899304-425eee4c7efc?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Business">
-                        <span class="badge-duration">2 Years</span>
+                        <span class="badge-duration">4 Years</span>
                     </div>
                     <div class="card-body">
                         <span class="category">BUSINESS</span>
@@ -261,7 +262,7 @@
                 <div class="program-card">
                     <div class="card-img">
                         <img src="https://images.unsplash.com/photo-1532094349884-543bc11b234d?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Science">
-                        <span class="badge-duration">2 Years</span>
+                        <span class="badge-duration">4 Years</span>
                     </div>
                     <div class="card-body">
                         <span class="category">SCIENCES</span>
@@ -273,7 +274,7 @@
                 <div class="program-card">
                     <div class="card-img">
                         <img src="https://images.unsplash.com/photo-1513364776144-60967b0f800f?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Arts">
-                        <span class="badge-duration">2 Years</span>
+                        <span class="badge-duration">4 Years</span>
                     </div>
                     <div class="card-body">
                         <span class="category">CREATIVE ARTS</span>
@@ -324,18 +325,18 @@
         <div class="container stats-bar">
             <div class="stat-box">
                 <i class="fas fa-user-graduate"></i>
-                <h3>1200+</h3>
+                <h3>300+</h3>
                 <p>Enrolled Students</p>
             </div>
             <div class="stat-box">
                 <i class="fas fa-book"></i>
-                <h3>40+</h3>
+                <h3>13+</h3>
                 <p>Course Programs</p>
             </div>
             <div class="stat-box">
                 <i class="fas fa-globe"></i>
                 <h3>25+</h3>
-                <p>Global Partners</p>
+                <p>Country Partners</p>
             </div>
             <div class="stat-box">
                 <i class="fas fa-star"></i>
@@ -374,71 +375,98 @@
             </div>
         </div>
     </section>
+    <!-- Testimonials Section -->
+     <!-- TESTIMONIALS -->
+<section class="testimonials section-padding">
+  <div class="container">
+    
+    <div class="section-header text-center">
+      <h2>Testimonials</h2>
+      <p>Hear from our students, alumni, and parents about their Nori experience.</p>
+    </div>
 
-    <!-- TESTIMONIALS -->
-    <section class="testimonials section-padding">
-        <div class="container">
-            <div class="section-header text-center">
-                <h2>Testimonials</h2>
-                <p>Hear from our students, alumni, and parents about their Nori experience.</p>
-            </div>
+    <!-- Main Swiper Container -->
+    <div class="swiper" id="testimonialsSwiper">
+      
+      <!-- Swiper Wrapper (Holds all slides) -->
+      <div class="swiper-wrapper">
+        
+        <!-- ================= SLIDE 1 ================= -->
+        <div class="swiper-slide">
+          <!-- We use a grid inside the slide to show 2 cards at once (like the Bootstrap example) -->
+          <div class="testimonial-grid">
             
-            <div class="testimonial-slider" id="testimonialSlider">
-                <!-- Slide 1 -->
-                <div class="testimonial-slide active">
-                    <div class="testimonial-grid">
-                        <div class="testimonial-card">
-                            <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&q=80" alt="Parent">
-                            <div class="quote-content">
-                                <p>"Nori Secondary School has been a second home for my daughter. The teachers genuinely care about her academic and personal growth. The STEM program is exceptional."</p>
-                                <h4>Sarah Jenkins</h4>
-                                <span>Parent</span>
-                                <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
-                            </div>
-                        </div>
-                        <div class="testimonial-card">
-                            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&q=80" alt="Alumni">
-                            <div class="quote-content">
-                                <p>"The leadership skills I developed at Nori have been invaluable in my career. The diverse range of extracurriculars allowed me to discover my passion for community organizing."</p>
-                                <h4>David Osei</h4>
-                                <span>Alumni, Class of 2015</span>
-                                <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
-                            </div>
-                        </div>
-                    </div>
+            <!-- Card 1 -->
+            <div class="testimonial-card">
+              <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-4.0.3&auto=format&fit=crop&w=150&q=80" alt="Sarah">
+              <div class="quote-content">
+                <p>"Nori Secondary School has been a second home for my daughter. The teachers genuinely care about her success."</p>
+                <h4>Sarah Jenkins</h4>
+                <span>Parent</span>
+                <div class="stars">
+                  <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
                 </div>
+              </div>
+            </div>
 
-                <!-- Slide 2 -->
-                <div class="testimonial-slide">
-                    <div class="testimonial-grid">
-                        <div class="testimonial-card">
-                            <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&q=80" alt="Teacher">
-                            <div class="quote-content">
-                                <p>"Teaching at Nori is a privilege. The administration supports innovative teaching methods, and the students are eager to learn. It's a truly inspiring environment."</p>
-                                <h4>Emily Chen</h4>
-                                <span>Head of Science Department</span>
-                                <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
-                            </div>
-                        </div>
-                        <div class="testimonial-card">
-                            <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&q=80" alt="Student">
-                            <div class="quote-content">
-                                <p>"Being part of the debate team and the soccer squad helped me manage my time and build confidence. I feel completely prepared for university life."</p>
-                                <h4>Marcus Thorne</h4>
-                                <span>Current Student, Year 12</span>
-                                <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
-                            </div>
-                        </div>
-                    </div>
+            <!-- Card 2 -->
+            <div class="testimonial-card">
+              <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=150&q=80" alt="David">
+              <div class="quote-content">
+                <p>"The leadership skills I developed at Nori have been invaluable in my career. The community is unmatched."</p>
+                <h4>David Osei</h4>
+                <span>Alumni, Class of 2015</span>
+                <div class="stars">
+                  <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
                 </div>
+              </div>
             </div>
+
+          </div> <!-- End testimonial-grid -->
+        </div> <!-- End Slide 1 -->
+
+
+        <!-- ================= SLIDE 2 ================= -->
+        <div class="swiper-slide">
+          <div class="testimonial-grid">
             
-            <div class="slider-dots">
-                <span class="dot active" data-index="0"></span>
-                <span class="dot" data-index="1"></span>
+            <!-- Card 3 -->
+            <div class="testimonial-card">
+              <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&auto=format&fit=crop&w=150&q=80" alt="Emily">
+              <div class="quote-content">
+                <p>"Teaching at Nori is a privilege. The administration supports innovative teaching methods."</p>
+                <h4>Emily Chen</h4>
+                <span>Head of Science Department</span>
+                <div class="stars">
+                  <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                </div>
+              </div>
             </div>
-        </div>
-    </section>
+
+            <!-- Card 4 -->
+            <div class="testimonial-card">
+              <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-4.0.3&auto=format&fit=crop&w=150&q=80" alt="Marcus">
+              <div class="quote-content">
+                <p>"Being part of the debate team and the soccer squad helped me manage my time and build confidence."</p>
+                <h4>Marcus Thorne</h4>
+                <span>Current Student, Year 12</span>
+                <div class="stars">
+                  <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                </div>
+              </div>
+            </div>
+
+          </div> <!-- End testimonial-grid -->
+        </div> <!-- End Slide 2 -->
+
+      </div> <!-- End swiper-wrapper -->
+
+      <!-- ADD THIS FOR THE DOTS -->
+      <div class="swiper-pagination"></div>
+
+    </div> <!-- End Main Swiper Container -->
+  </div>
+</section>
 
     <!-- EXCELLENCE IN EDUCATION (STATS BANNER) -->
     <section class="excellence section-padding">
@@ -663,5 +691,10 @@
     </footer>
 
     <script src="script.js"></script>
+    <!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+<!-- Your Custom JS file -->
+<script src="nori.js"></script> 
 </body>
 </html>

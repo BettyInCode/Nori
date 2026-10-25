@@ -1157,3 +1157,21 @@ p {
         align-items: flex-start;
     }
 }
+/* Space for the dots at the bottom */
+.swiper {
+  padding-bottom: 40px; 
+}
+
+/* Grid to hold two cards inside one slide */
+.testimonial-grid {
+  display: grid;
+  grid-template-columns: 1fr; /* 1 column on mobile */
+  gap: 20px;
+}
+
+/* 2 columns on desktop */
+@media (min-width: 768px) {
+  .testimonial-grid {
+    grid-template-columns: 1fr 1fr; 
+  }
+}

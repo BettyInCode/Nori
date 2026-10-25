@@ -95,3 +95,21 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+  var swiper = new Swiper("#testimonialsSwiper", {
+    slidesPerView: 1, // 1 slide (which holds 2 cards) on mobile
+    spaceBetween: 20,
+    loop: true, // Infinite loop
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    breakpoints: {
+      // When window is >= 768px (Tablets & Desktop)
+      768: {
+        slidesPerView: 1, // Keeps the 2-card grid layout
+      }
+    }
+  });
+});
